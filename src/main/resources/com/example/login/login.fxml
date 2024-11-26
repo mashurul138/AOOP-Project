@@ -6,11 +6,20 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+>>>>>>> master
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.SigningController">
+>>>>>>> master
    <left>
       <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #E96151;" BorderPane.alignment="CENTER">
          <Label alignment="CENTER" layoutY="132.0" prefHeight="17.0" prefWidth="227.0" text="Project Image" textFill="WHITE">
@@ -41,7 +50,11 @@
    </left>
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+<<<<<<< HEAD
          <Label alignment="CENTER" layoutX="20.0" layoutY="45.0" prefHeight="23.0" prefWidth="287.0" text="Secure Login">
+=======
+         <Label alignment="CENTER" layoutX="25.0" layoutY="74.0" prefHeight="23.0" prefWidth="257.0" text="Secure Login">
+>>>>>>> master
             <font>
                <Font name="Verdana Bold" size="14.0" />
             </font>
@@ -49,21 +62,41 @@
                <InnerShadow />
             </effect>
          </Label>
+<<<<<<< HEAD
          <Label alignment="CENTER" layoutX="20.0" layoutY="123.0" prefHeight="17.0" prefWidth="75.0" text="Username">
+=======
+         <Label alignment="CENTER" layoutX="17.0" layoutY="149.0" prefHeight="17.0" prefWidth="75.0" text="Username">
+>>>>>>> master
             <font>
                <Font name="Verdana" size="12.0" />
             </font>
          </Label>
+<<<<<<< HEAD
          <Label alignment="CENTER" layoutX="20.0" layoutY="169.0" prefHeight="17.0" prefWidth="75.0" text="Password">
+=======
+         <Label alignment="CENTER" layoutX="17.0" layoutY="195.0" prefHeight="17.0" prefWidth="75.0" text="Password">
+>>>>>>> master
             <font>
                <Font name="Verdana" size="12.0" />
             </font>
          </Label>
+<<<<<<< HEAD
          <TextField fx:id="usernameTextField" layoutX="104.0" layoutY="120.0" prefHeight="25.0" prefWidth="200.0" promptText="Username" style="-fx-background-radius: 50;" />
          <PasswordField fx:id="passwordPasswordField" layoutX="104.0" layoutY="166.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" style="-fx-background-radius: 50;" />
          <Button fx:id="loginButton" alignment="CENTER" layoutX="79.0" layoutY="218.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="Login" textFill="WHITE" />
          <Button fx:id="signupButton" alignment="CENTER" layoutX="79.0" layoutY="255.0" mnemonicParsing="false" onAction="#signupButtonOnAction" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="Sign Up" textFill="WHITE" />
          <Label fx:id="messageLabelField" alignment="CENTER" layoutX="27.0" layoutY="77.0" prefHeight="17.0" prefWidth="271.0" textFill="#e96151" />
+=======
+         <TextField fx:id="usernameTextField" layoutX="101.0" layoutY="146.0" prefHeight="25.0" prefWidth="175.0" promptText="Username" style="-fx-background-radius: 50;" />
+         <PasswordField fx:id="passwordPasswordField" layoutX="101.0" layoutY="192.0" prefHeight="25.0" prefWidth="175.0" promptText="Password" style="-fx-background-radius: 50;" />
+         <Button fx:id="loginButton" alignment="CENTER" layoutX="76.0" layoutY="244.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="Login" textFill="WHITE" />
+         <Button fx:id="signupButton" alignment="CENTER" layoutX="76.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchTOSignup" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="Sign Up" textFill="WHITE" />
+         <Label fx:id="messageLabelField" alignment="CENTER" layoutX="42.0" layoutY="107.0" prefHeight="17.0" prefWidth="229.0" textFill="#e96151" />
+         <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="134.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@security.png" />
+         </ImageView>
+         <Label layoutX="137.0" layoutY="279.0" text="Or" />
+>>>>>>> master
       </AnchorPane>
    </right>
 </BorderPane>
