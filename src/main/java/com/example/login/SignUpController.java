@@ -2,17 +2,10 @@ package com.example.login;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Statement;
 
@@ -43,21 +36,20 @@ public class SignUpController {
     public Label messageLabel;
 
     public void switchToLogin(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        Functions.SceneChange(event,"login.fxml");
     }
 
     public void registerUser() {
-        if(!passwordPasswordField.getText().equals(confirmPasswordPasswordField.getText())) {
+        if (usernameTextField.getText().isBlank() || passwordPasswordField.getText().isBlank() || confirmPasswordPasswordField.getText().isBlank()) {
+            messageLabel.setText("Please enter username & password.");
+            usernameTextField.clear();
+            passwordPasswordField.clear();
+            confirmPasswordPasswordField.clear();
+        } else if(!passwordPasswordField.getText().equals(confirmPasswordPasswordField.getText())) {
             passwordMatchMessage.setText("Password doesn't match!");
+            usernameTextField.clear();
+            passwordPasswordField.clear();
+            confirmPasswordPasswordField.clear();
         } else {
             DBConnection connectNow = new DBConnection();
             Connection connectDB = connectNow.getConnection();
@@ -71,9 +63,16 @@ public class SignUpController {
                 Statement statement = connectDB.createStatement();
                 statement.executeUpdate(insertToRegister);
                 messageLabel.setText("User Registered Successfully");
+                usernameTextField.clear();
+                passwordPasswordField.clear();
+                confirmPasswordPasswordField.clear();
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
+    }
+
+    public void isUsernameTaken() {
+
     }
 }

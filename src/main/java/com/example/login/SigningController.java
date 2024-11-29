@@ -2,17 +2,10 @@ package com.example.login;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -57,6 +50,8 @@ public class SigningController {
                 } else {
                     messageLabelField.setText("Please try again");
                 }
+                usernameTextField.clear();
+                passwordPasswordField.clear();
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -64,15 +59,6 @@ public class SigningController {
     }
 
     public void switchTOSignup(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("signup.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        Functions.SceneChange(event,"signup.fxml");
     }
 }

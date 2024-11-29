@@ -38,8 +38,8 @@
       </font>
    </Label>
    <PasswordField fx:id="confirmPasswordPasswordField" layoutX="92.0" layoutY="284.0" prefHeight="25.0" prefWidth="336.0" promptText="Confirm Password" />
-   <Button fx:id="signupButton" layoutX="182.0" layoutY="324.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #E96151;" text="SignUp" textFill="WHITE" />
-   <Button fx:id="loginButton" layoutX="182.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #E96151;" text="Login" textFill="WHITE" />
+   <Button fx:id="signupButton" layoutX="182.0" layoutY="324.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="SignUp" textFill="WHITE" />
+   <Button fx:id="loginButton" layoutX="182.0" layoutY="380.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #E96151; -fx-background-radius: 50;" text="Login" textFill="WHITE" />
    <Label fx:id="confirmMessageLabel" alignment="CENTER" layoutX="82.0" layoutY="94.0" prefHeight="19.0" prefWidth="357.0" textFill="#2f7bed">
       <font>
          <Font size="13.0" />
@@ -55,4 +55,5 @@
          <Font size="13.0" />
       </font>
    </Label>
+   <Label alignment="CENTER" layoutX="158.0" layoutY="357.0" prefHeight="17.0" prefWidth="186.0" text="Already have an account?" />
 </AnchorPane>
