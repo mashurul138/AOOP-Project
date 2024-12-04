@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: LightBLUE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Homepage">
+   <effect>
+      <Glow />
+   </effect>
+   <Label alignment="CENTER" layoutX="249.0" layoutY="46.0" text="Welcome To" textAlignment="CENTER">
+      <font>
+         <Font name="Bookman Old Style Bold" size="48.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="314.0" layoutY="103.0" text="Bachelor Sphere" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Rectangle fx:id="rec1" arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="250.0" layoutX="45.0" layoutY="187.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="200.0" onMouseClicked="#messManagement1"/>
+   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="250.0" layoutX="295.0" layoutY="187.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="250.0" layoutX="545.0" layoutY="187.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="232.0" layoutX="53.0" layoutY="196.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="183.0">
+      <effect>
+         <Glow level="0.57" />
+      </effect>
+   </Rectangle>
+   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="232.0" layoutX="304.0" layoutY="196.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="183.0" />
+   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1a80d94c" height="232.0" layoutX="554.0" layoutY="196.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="183.0" />
+   <ImageView fx:id="messManagement" fitHeight="211.0" fitWidth="200.0" layoutX="45.0" layoutY="203.0" onMouseClicked="#messManagement" pickOnBounds="true">
+      <Image url="@MessManagementLogo.png" />
+   </ImageView>
+   <ImageView fx:id="bachelorShop" fitHeight="211.0" fitWidth="200.0" layoutX="295.0" layoutY="207.0" onMouseClicked="#bachelorShop" pickOnBounds="true">
+      <Image url="@BachelorShopLogo.png" />
+   </ImageView>
+   <ImageView fx:id="to_let" fitHeight="211.0" fitWidth="183.0" layoutX="553.0" layoutY="207.0" onMouseClicked="#to_let" pickOnBounds="true">
+      <Image url="@ToletLogo.png" />
+   </ImageView>
+</AnchorPane>

@@ -58,11 +58,9 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-<<<<<<< HEAD
-              <mainClass>com.example.login/com.example.login.HelloApplication</mainClass>
-=======
+
               <mainClass>com.example.login/com.example.login.LoginForm</mainClass>
->>>>>>> master
+
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
